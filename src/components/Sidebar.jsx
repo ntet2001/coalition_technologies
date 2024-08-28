@@ -39,8 +39,8 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="flex rounded-lg">
-      <div className="h-screen py-8 bg-white border-l border-r sm:w-100 w-100 ">
+    <aside className="flex">
+      <div className="h-screen py-8 rounded-lg bg-white border-l border-r sm:w-100 w-100 ">
         <div className="relative">
           <h1 style={styles.sidebartitle}>Patients</h1>
           <button

@@ -4,7 +4,7 @@ const DiagnosisHistory = () => {
   return (
     <section
       role="list"
-      className="rounded-3xl p-5 bg-white divide-y divide-gray-100"
+      className="rounded-3xl p-5 bg-white divide-y divide-gray-100 mb-4"
     >
       <div className="flex items-center pb-10">
         <h2 className="text-2xl font-medium">Diagnosis History</h2>

@@ -14,89 +14,95 @@ const PatientInformation = () => {
   const patientInsuranceProvider = "Sunrise Health Assurance";
 
   return (
-    <div className="bg-white max-h-full w-96 rounded-lg px-5 py-8">
-      {/* profile of the patient */}
-      <div className="mb-10">
-        <div className="flex justify-center mb-5">
-          <img src={profileImage} alt="profileImage" />
+    <div className="">
+      <div className="bg-white h-screen w-96 rounded-lg px-5 py-8 ">
+        {/* profile of the patient */}
+        <div className="mb-10">
+          <div className="flex justify-center mb-5">
+            <img src={profileImage} alt="profileImage" />
+          </div>
+          <div>
+            <p className="text-base font-extrabold text-center">
+              {patientName}
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="text-base font-extrabold text-center">{patientName}</p>
-        </div>
-      </div>
 
-      {/* patient informations */}
-      {/* birthday */}
-      <div className="flex flex-shrink-0 items-center px-2 justify-start mb-5">
-        <div>
-          <img className="h-10 w-10 mr-5" src={BirthIcon} alt="BirthIcon" />
+        {/* patient informations */}
+        {/* birthday */}
+        <div className="flex flex-shrink-0 items-center px-2 justify-start mb-5">
+          <div>
+            <img className="h-10 w-10 mr-5" src={BirthIcon} alt="BirthIcon" />
+          </div>
+          <div>
+            <p className="text-sm font-medium text-[#072635]">Date of Birth</p>
+            <p className="text-sm font-bold text-[#072635]">
+              {patientBirthday}
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="text-sm font-medium text-[#072635]">Date of Birth</p>
-          <p className="text-sm font-bold text-[#072635]">{patientBirthday}</p>
-        </div>
-      </div>
 
-      {/* gender */}
-      <div className="flex flex-shrink-0 items-center px-2 justify-start mb-5">
-        <div>
-          <img className="h-10 w-10 mr-5" src={FemaleIcon} alt="FemaleIcon" />
+        {/* gender */}
+        <div className="flex flex-shrink-0 items-center px-2 justify-start mb-5">
+          <div>
+            <img className="h-10 w-10 mr-5" src={FemaleIcon} alt="FemaleIcon" />
+          </div>
+          <div>
+            <p className="text-sm font-medium text-[#072635]">Gender</p>
+            <p className="text-sm font-bold text-[#072635]">{patientGender}</p>
+          </div>
         </div>
-        <div>
-          <p className="text-sm font-medium text-[#072635]">Gender</p>
-          <p className="text-sm font-bold text-[#072635]">{patientGender}</p>
-        </div>
-      </div>
 
-      {/* Contact info */}
-      <div className="flex flex-shrink-0 items-center px-2 justify-start mb-5">
-        <div>
-          <img className="h-10 w-10 mr-5" src={PhoneIcon} alt="PhoneIcon" />
+        {/* Contact info */}
+        <div className="flex flex-shrink-0 items-center px-2 justify-start mb-5">
+          <div>
+            <img className="h-10 w-10 mr-5" src={PhoneIcon} alt="PhoneIcon" />
+          </div>
+          <div>
+            <p className="text-sm font-medium text-[#072635]">Contact Info.</p>
+            <p className="text-sm font-bold text-[#072635]">{patientContact}</p>
+          </div>
         </div>
-        <div>
-          <p className="text-sm font-medium text-[#072635]">Contact Info.</p>
-          <p className="text-sm font-bold text-[#072635]">{patientContact}</p>
-        </div>
-      </div>
 
-      {/* Emergency Contact info */}
-      <div className="flex flex-shrink-0 items-center px-2 justify-start mb-5">
-        <div>
-          <img className="h-10 w-10 mr-5" src={PhoneIcon} alt="PhoneIcon" />
+        {/* Emergency Contact info */}
+        <div className="flex flex-shrink-0 items-center px-2 justify-start mb-5">
+          <div>
+            <img className="h-10 w-10 mr-5" src={PhoneIcon} alt="PhoneIcon" />
+          </div>
+          <div>
+            <p className="text-sm font-medium text-[#072635]">
+              Emergency Contacts
+            </p>
+            <p className="text-sm font-bold text-[#072635]">
+              {patientEmergencyContact}
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="text-sm font-medium text-[#072635]">
-            Emergency Contacts
-          </p>
-          <p className="text-sm font-bold text-[#072635]">
-            {patientEmergencyContact}
-          </p>
-        </div>
-      </div>
 
-      {/* Insurance provider */}
-      <div className="flex flex-shrink-0 items-center px-2 justify-start mb-10">
-        <div>
-          <img
-            className="h-10 w-10 mr-5"
-            src={InsuranceIcon}
-            alt="InsuranceIcon"
-          />
+        {/* Insurance provider */}
+        <div className="flex flex-shrink-0 items-center px-2 justify-start mb-10">
+          <div>
+            <img
+              className="h-10 w-10 mr-5"
+              src={InsuranceIcon}
+              alt="InsuranceIcon"
+            />
+          </div>
+          <div>
+            <p className="text-sm font-medium text-[#072635]">
+              Insurance provider
+            </p>
+            <p className="text-sm font-bold text-[#072635]">
+              {patientInsuranceProvider}
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="text-sm font-medium text-[#072635]">
-            Insurance provider
-          </p>
-          <p className="text-sm font-bold text-[#072635]">
-            {patientInsuranceProvider}
-          </p>
-        </div>
-      </div>
 
-      <div className="flex justify-center mx-2 ">
-        <button className="px-4 py-2 rounded-full font-bold text-[#072635] bg-[#01F0D0]">
-          Show All Information
-        </button>
+        <div className="flex justify-center mx-2 ">
+          <button className="px-4 py-2 rounded-full font-bold text-[#072635] bg-[#01F0D0]">
+            Show All Information
+          </button>
+        </div>
       </div>
     </div>
   );
