@@ -15,7 +15,7 @@ const PatientInformation = () => {
 
   return (
     <div className="">
-      <div className="bg-white h-screen w-96 rounded-lg px-5 py-8 ">
+      <div className="bg-white h-auto w-96 rounded-lg px-5 py-8 mb-8">
         {/* profile of the patient */}
         <div className="mb-10">
           <div className="flex justify-center mb-5">

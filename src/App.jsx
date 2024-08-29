@@ -10,15 +10,20 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="flex justify-between bg-gray-200 px-5 pt-5">
+
+      <div className="flex justify-between bg-[#F6F7F8] px-5 pt-5">
         <Sidebar />
-        <div className="mr-4 ml-4">
+
+        <div className="mr-8 ml-8">
           <DiagnosisHistory />
           <DiagnosticList />
         </div>
-        <PatientInformation />
+
+        <div>
+          <PatientInformation />
+          <LabResults />
+        </div>
       </div>
-      <LabResults />
     </>
   );
 };

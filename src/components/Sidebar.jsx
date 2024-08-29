@@ -21,6 +21,9 @@ const Sidebar = () => {
     ["Dylan Thompson", "Male, 36"],
     ["Nathan Evans", "Male, 58"],
     ["Mike Nolan", "Male, 31"],
+    ["Mike Nolan", "Male, 31"],
+    ["Mike Nolan", "Male, 31"],
+    ["Mike Nolan", "Male, 31"],
   ];
   const styles = {
     dropdownmenu: {

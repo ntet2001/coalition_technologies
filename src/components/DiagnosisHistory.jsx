@@ -4,15 +4,15 @@ const DiagnosisHistory = () => {
   return (
     <section
       role="list"
-      className="rounded-3xl p-5 bg-white divide-y divide-gray-100 mb-4"
+      className="rounded-3xl p-5 bg-white divide-y divide-gray-100 mb-8"
     >
       <div className="flex items-center pb-10">
-        <h2 className="text-2xl font-medium">Diagnosis History</h2>
+        <h2 className="text-2xl font-extrabold">Diagnosis History</h2>
       </div>
       <section className="grid grid-cols-1 grid-rows-1 lg:grid-cols-3 gap-y-12 bg-blue-50 px-5 pt-2 rounded-xl">
         <div className="col-span-2 row-span-1 gap-y-8 lg:gap-0">
           <div className="grid grid-cols-2 grid-rows-1">
-            <h2 className="flex items-center text-xl font-medium">
+            <h2 className="flex items-center text-xl font-bold">
               Blood Pressure
             </h2>
             <div className="grid grid-cols-1 text-sm md:mr-0 lg:mr-8">
@@ -23,23 +23,23 @@ const DiagnosisHistory = () => {
           </div>
         </div>
         <div className="flex flex-wrap">
-          <div className="w-full grid grid-cols-1 grid-rows-3 text-md font-medium mb-4">
+          <div className="w-full grid grid-cols-1 grid-rows-3 text-md font-bold mb-4">
             <div className="flex items-center">
               <div className="w-4 h-4 mr-2 bg-pink-400 rounded-full"></div>
               Systolic
             </div>
-            <h3 className="py-1 flex items-center text-2xl font-medium">160</h3>
+            <h3 className="py-1 flex items-center text-2xl font-bold">160</h3>
             <div className="flex items-center">
               <p className="ml-1 font-extralight">Higher than Average</p>
             </div>
           </div>
           <div className="h-px w-full mr-2 bg-gray-400 mb-4"></div>
-          <div className="w-full grid grid-cols-1 grid-rows-3 text-md font-medium">
+          <div className="w-full grid grid-cols-1 grid-rows-3 text-md font-bold">
             <div className="flex items-center">
               <div className="w-4 h-4 mr-2 bg-purple-400 rounded-full"></div>
               Diastolic
             </div>
-            <h3 className="py-1 flex items-center text-2xl font-medium">78</h3>
+            <h3 className="py-1 flex items-center text-2xl font-bold">78</h3>
             <div className="flex items-center">
               <p className="ml-1 font-extralight">Lower than Average</p>
             </div>
