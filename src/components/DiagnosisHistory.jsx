@@ -7,18 +7,27 @@ const DiagnosisHistory = () => {
     labels: UserData.map((data) => data.year),
     datasets: [
       {
-        label: "Users Gained",
-        data: UserData.map((data) => data.userGain),
+        label: "Systolic",
+        data: UserData.map((data) => data.systolic),
         backgroundColor: [
-          "rgba(75,192,192,1)",
-          "#ecf0f1",
-          "#50AF95",
-          "#f3ba2f",
-          "#2a71d0",
+          "#C26EB4"
         ],
-        borderColor: "black",
+        borderColor: "#C26EB4",
         borderWidth: 2,
+        min: 60,
+        max: 180,
       },
+      {
+        label: "Diastolic",
+        data: UserData.map((data) => data.diastolic),
+        backgroundColor: [
+          "#7E6CAB"
+        ],
+        borderColor: "#7E6CAB",
+        borderWidth: 2,
+        min: 60,
+        max: 180,
+      }
     ],
   });
   
@@ -31,7 +40,7 @@ const DiagnosisHistory = () => {
       <div className="flex items-center pb-10">
         <h2 className="text-2xl font-extrabold">Diagnosis History</h2>
       </div>
-      <section className="grid grid-cols-1 grid-rows-1 lg:grid-cols-3 gap-y-12 bg-blue-50 px-5 pt-2 rounded-xl">
+      <section className="grid grid-cols-1 grid-rows-1 lg:grid-cols-3 gap-y-12 bg-[#F4F0FE] px-5 pt-2 rounded-xl">
         <div className="col-span-2 row-span-1 gap-y-8 lg:gap-0">
           <div className="grid grid-cols-2 grid-rows-1">
             <h2 className="flex items-center text-xl font-bold">
