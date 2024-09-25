@@ -1,6 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import {UserData} from '../Data';
+import LineChart from "./LineChart";
 
 const DiagnosisHistory = () => {
+  const [userData, setUserData] = useState({
+    labels: UserData.map((data) => data.year),
+    datasets: [
+      {
+        label: "Users Gained",
+        data: UserData.map((data) => data.userGain),
+        backgroundColor: [
+          "rgba(75,192,192,1)",
+          "#ecf0f1",
+          "#50AF95",
+          "#f3ba2f",
+          "#2a71d0",
+        ],
+        borderColor: "black",
+        borderWidth: 2,
+      },
+    ],
+  });
+  
+  
   return (
     <section
       role="list"
@@ -20,6 +42,9 @@ const DiagnosisHistory = () => {
                 Last 6 Months <span className="ml-3"></span>
               </p>
             </div>
+          </div>
+          <div>
+            <LineChart chartData={userData}/>
           </div>
         </div>
         <div className="flex flex-wrap">
